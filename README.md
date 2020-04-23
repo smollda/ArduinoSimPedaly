@@ -3,6 +3,10 @@ Připojení 3 pedálů s použitím loadcellů a 3 modulů HX711
 
 Pozor - pro úspěšné dokončení tohoto projektu je nutné znát základy arduina a celkově programování (po pár tutoriálech na netu podle mně zvládne každý). Zapojit se to dá i pomocí propojovacích kablíků pro nepájivá pole a menší svorkovnice, ale lepší je to připájet alespoň na univerzální plošný spoj - takže pájka, cín a nějaká zkušenost s nimi se taky hodí
 
+V souborech je i můj návrh na plošný spoj tvořený v kicadu (Pedaly.zip) a soubor Pedaly.kicad_pcb, který stačí poslat například sem https://www.plosnaky.cz/ a nechat si ho vyrobit.
+
+V aktuální verzi softwaru mám zakomentován spojkový pedál, protože ho zatím nemám hotový.
+
 # Seznam materiálu:
 Arduino Micro / Arduino Leonardo (např. https://www.gme.cz/100-kompatibilni-klon-arduino-micro-atmega32u4-5v)
 
