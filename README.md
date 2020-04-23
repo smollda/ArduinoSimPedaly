@@ -7,6 +7,10 @@ V souborech je i můj návrh na plošný spoj tvořený v kicadu (Pedaly.zip) a 
 
 V aktuální verzi softwaru mám zakomentován spojkový pedál, protože ho zatím nemám hotový.
 
+Použité knihovny:
+HX711 multi https://github.com/compugician/HX711-multi
+Arduino Joystick 2.0 https://github.com/MHeironimus/ArduinoJoystickLibrary
+
 # Seznam materiálu:
 Arduino Micro / Arduino Leonardo (např. https://www.gme.cz/100-kompatibilni-klon-arduino-micro-atmega32u4-5v)
 
