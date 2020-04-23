@@ -27,4 +27,4 @@ Případně dutinkové lišty - arduino a HX711 moduly se pak nepájí přímo n
 
 # Zapojení:
 
-Viz Schema.png. Na HX711 modulech je potřeba udělat úpravu pro běh na 80Hz (v základu běží na 10 Hz) - viz hx711_uprava.jpg.
+Viz Schema.png. Na HX711 modulech je potřeba udělat úpravu pro běh na 80Hz (v základu běží na 10 Hz) - viz hx711_uprava.jpg. Svorkovnice označená jako příprava pro ručku je myšlena pro připojení případného čtvrtého HX711 modulu, umístěného v ruční brzdě - zatím jenom příprava do budoucna. Ve výsledku nejspíš ručku zapojím na separátní arduino třeba s button boxem.
