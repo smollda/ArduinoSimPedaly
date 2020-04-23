@@ -7,5 +7,6 @@ Pozor - pro úspěšné dokončení tohoto projektu je nutné znát základy ard
 Arduino Micro / Arduino Leonardo (např. https://www.gme.cz/100-kompatibilni-klon-arduino-micro-atmega32u4-5v)
 
 HX711 modul (např. https://www.laskarduino.cz/ad-prevodnik-modul-24-bit-2-kanaly-hx711/)
+
 3x loadcell 
 
