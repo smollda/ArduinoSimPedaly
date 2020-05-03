@@ -32,6 +32,9 @@ Viz Schema.png. Na HX711 modulech je potřeba udělat úpravu pro běh na 80Hz (
 
 # Program:
 Soubor loadcellyHX711.ino obsahuje můj aktuální sketch, který použvám. V podstatě jde jenom o přečtení hodnot ze všech HX711 do pole results[], přepočet těchto hodnot do rozsahu pro knihovnu joystick (v mém sketchi je rozsah špatně, přícházím o přesnost. Správně by na výstup mělo jít číslo mezi -32767 a 32767).
+
 Soubor Pedaly.ino obsahuje novější verzi, kde si arduino samo přepočítá hodnoty vyčtené z HX711 modulů do rozsahu -32767 / 32767. Při prvním spuštění je potřeba provést "kalibraci" - program přečte EEPROM pamět arduina, kde jsou uloženy minimální a maximální hodnoty všech pedálů. Pokud tam tyto hodnoty nejsou (po prvním nahrání tohoto sketche), spustí kalibraci - do konzole vypíše "Start kalibrace" (v tu chvíli je potřeba nechat pedály v základní poloze), dále "Minimální hodnoty: Pedál 1: x, pedál 2: y, pedál 3:z", kde x, y a z jsou hodnoty přečtené z HX711 modulů. Následně se do konzole vypíše "Sešlápni opakovaně všechny 3 pedály na doraz do 10 sekund (brzdu dle libosti)". V tu chvíli je potřeba během následujících 10 sekund sešlápnout všechny 3 pedály, klidně opakovaně. Program uloží maximální hodnoty všech pedálů a použije je pro přepočet hodnot pro výstup na jednotlivé osy (to je ten zmiňovaný rozsah -32767 / 32767). Hodnoty jsou uloženy do paměti EEPROM arduina, zůstanou tedy zachované i po restartu / vypnutí napájení. V některých případech i při přehrání softwaru arduina, tam záleží jak je nastaven bootloader. 
+
 "Kalibraci" pedálů lze znovu provést otevřením konzole v arduino IDE (nástroje -> Seriový monitor) a odesláním znaku "k" (stiskem tlačítka "pošli".
+
 Konečnou kalibraci pedálů ve windows (deadzony atd.) lze provést programem DIview stejně jako u Heusinkveld pedálů - viz návod https://www.youtube.com/watch?v=b3Ut4R1O-Sw. 
