@@ -13,6 +13,7 @@ Arduino Joystick 2.0 https://github.com/MHeironimus/ArduinoJoystickLibrary
 
 # Seznam materiálu:
 Arduino Micro / Arduino Leonardo (např. https://www.gme.cz/100-kompatibilni-klon-arduino-micro-atmega32u4-5v)
+(pro můj návrh plošného spoje je potřeba konkrétně typ Micro!)
 
 HX711 modul (např. https://www.laskarduino.cz/ad-prevodnik-modul-24-bit-2-kanaly-hx711/)
 
@@ -22,7 +23,7 @@ V případě osazení na plošný spoj navíc:
 
 Svorkovnice (např. 4x https://www.gme.cz/svorkovnice-ptr-akz700-3-5-08-v-green)
 
-Případně dutinkové lišty - arduino a HX711 moduly se pak nepájí přímo na PCB, ale nacvaknou se do těchto lišt https://www.gme.cz/dutinkova-lista-bl04g 4x, https://www.gme.cz/dutinkova-lista-bl806g 4x, https://www.gme.cz/dutinkova-lista-bl15g 2x (arduino nemá využity všechny piny, proto stačí 15 pinová dutinková lišta, nebo i kratší
+Případně dutinkové lišty - arduino a HX711 moduly se pak nepájí přímo na PCB, ale nacvaknou se do těchto lišt (tohle řešení silně doporučuji!) https://www.gme.cz/dutinkova-lista-bl04g 4x, https://www.gme.cz/dutinkova-lista-bl806g 4x, https://www.gme.cz/dutinkova-lista-bl15g 2x (arduino nemá využity všechny piny, proto stačí 15 pinová dutinková lišta, nebo i kratší
 
 
 # Zapojení:
