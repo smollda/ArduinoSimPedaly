@@ -38,6 +38,7 @@ Soubor Pedaly.ino obsahuje novější verzi, kde si arduino samo přepočítá h
 
 "Kalibraci" pedálů lze znovu provést otevřením konzole v arduino IDE (nástroje -> Seriový monitor) a odesláním znaku "k" (stiskem tlačítka "pošli").
 
-Změna 20.7.2020 - program Pedaly.ino upraven tak, aby neaktualizoval pozici pedálu, pokud přečte z HX711 modulu nesmyslnou hodnotu (extrémně vysoká kladná/záporná hodnota). Použitá knihovna nemá ošetřeno, zda je hodnota přečtená z HX711 modulu platná a jednou za x sekund se stane, že přečte nesmysl - zatím nevím čím je to způsobeno. Pokud by k chybě došlo během kalibrace, nebude mít pedál správný rozsah - v tom případě stačí kalibraci provést znovu.
+Změna 20.7.2020 - program Pedaly.ino upraven tak, aby neaktualizoval pozici pedálu, pokud přečte z HX711 modulu nesmyslnou hodnotu (extrémně vysoká kladná/záporná hodnota). Použitá knihovna nemá ošetřeno, zda je hodnota přečtená z HX711 modulu platná a jednou za x sekund se stane, že přečte nesmysl - zatím nevím čím je to způsobeno. 
+Pokud by náhodou k chybě došlo i během kalibrace, nebude mít pedál správný rozsah - v tom případě stačí kalibraci provést znovu.
 
 Konečnou kalibraci pedálů ve windows (deadzony atd.) lze provést programem DIview stejně jako u Heusinkveld pedálů - viz návod https://www.youtube.com/watch?v=b3Ut4R1O-Sw. 
