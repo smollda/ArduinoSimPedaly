@@ -124,9 +124,15 @@ if (millis() > (kalibraceZacatek + 10000) && kalibrace == true){
   Serial.print(" Pedál 3:");
   Serial.println(pedal3max);
 }
-Joystick.setXAxis(constrain(prepocet(pedal1min,pedal1max,results[0]),-32767,32767));  // Brzda
+if (results[0] >= pedal1min && results[0] <= pedal1max){
+Joystick.setXAxis(constrain(prepocet(pedal1min,pedal1max,results[0]),-32767,32767));  // Brzda - 20.7.2020 - přidána kontrola rozsahu - pokud bude hodnota mimo, osa se neaktualizuje
+}
+if (results[1] >= pedal2min && results[1] <= pedal2max){
 Joystick.setYAxis(constrain(prepocet(pedal2min,pedal2max,results[1]),-32767,32767));  // Plyn
+}
+if (results[2] >= pedal3min && results[2] <= pedal3max){
 Joystick.setZAxis(constrain(prepocet(pedal3min,pedal3max,results[2]),-32767,32767));  // Spojka
+}
 
 delay(10);  // v příkladu knihovny HX711-multi byl tenhle delay, nevím proč, tak jsem ho tu nechal
 }
