@@ -23,10 +23,10 @@ byte DOUTS[3] = {DOUT1,DOUT2,DOUT3};
 #define CHANNEL_COUNT sizeof(DOUTS)/sizeof(byte)
 long int results[CHANNEL_COUNT];
 
-//Definice , zapnutí jednotlivých os / počet tlačítek (tady 2, aby v DIview bylo možné vidět Buffered výstup)
+//Definice , zapnutí jednotlivých os / počet tlačítek 
 HX711MULTI scales(CHANNEL_COUNT, DOUTS, CLK);
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, 
-JOYSTICK_TYPE_MULTI_AXIS, 2, 0,
+JOYSTICK_TYPE_MULTI_AXIS, 0, 0,
 true, true, true, false, false, false,
 false, false, false, true, true);
 
